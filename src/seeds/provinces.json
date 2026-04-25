@@ -1,0 +1,11 @@
+[
+  { "name": "Western", "code": "WEST" },
+  { "name": "Central", "code": "CENT" },
+  { "name": "Southern", "code": "SOUTH" },
+  { "name": "Northern", "code": "NORTH" },
+  { "name": "Eastern", "code": "EAST" },
+  { "name": "North Western", "code": "NWEST" },
+  { "name": "North Central", "code": "NCENT" },
+  { "name": "Uva", "code": "UVA" },
+  { "name": "Sabaragamuwa", "code": "SAB" }
+]

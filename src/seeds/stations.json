@@ -1,0 +1,28 @@
+[
+  { "name": "Colombo Central Police Station", "code": "CMB-001", "districtCode": "CMB", "address": "Colombo", "contactNo": "0112000001" },
+  { "name": "Colombo South Police Station", "code": "CMB-002", "districtCode": "CMB", "address": "Colombo South", "contactNo": "0112000002" },
+  { "name": "Negombo Police Station", "code": "GPH-001", "districtCode": "GPH", "address": "Negombo", "contactNo": "0312000001" },
+  { "name": "Gampaha Police Station", "code": "GPH-002", "districtCode": "GPH", "address": "Gampaha", "contactNo": "0332000001" },
+  { "name": "Kalutara Police Station", "code": "KLT-001", "districtCode": "KLT", "address": "Kalutara", "contactNo": "0342000001" },
+
+  { "name": "Kandy Central Police Station", "code": "KDY-001", "districtCode": "KDY", "address": "Kandy", "contactNo": "0812000001" },
+  { "name": "Peradeniya Police Station", "code": "KDY-002", "districtCode": "KDY", "address": "Peradeniya", "contactNo": "0812000002" },
+  { "name": "Matale Police Station", "code": "MTL-001", "districtCode": "MTL", "address": "Matale", "contactNo": "0662000001" },
+  { "name": "Nuwara Eliya Police Station", "code": "NWE-001", "districtCode": "NWE", "address": "Nuwara Eliya", "contactNo": "0522000001" },
+
+  { "name": "Galle Police Station", "code": "GLE-001", "districtCode": "GLE", "address": "Galle", "contactNo": "0912000001" },
+  { "name": "Matara Police Station", "code": "MTR-001", "districtCode": "MTR", "address": "Matara", "contactNo": "0412000001" },
+  { "name": "Hambantota Police Station", "code": "HBT-001", "districtCode": "HBT", "address": "Hambantota", "contactNo": "0472000001" },
+
+  { "name": "Jaffna Police Station", "code": "JFN-001", "districtCode": "JFN", "address": "Jaffna", "contactNo": "0212000001" },
+  { "name": "Vavuniya Police Station", "code": "VAV-001", "districtCode": "VAV", "address": "Vavuniya", "contactNo": "0242000001" },
+
+  { "name": "Batticaloa Police Station", "code": "BTC-001", "districtCode": "BTC", "address": "Batticaloa", "contactNo": "0652000001" },
+  { "name": "Ampara Police Station", "code": "AMP-001", "districtCode": "AMP", "address": "Ampara", "contactNo": "0632000001" },
+  { "name": "Trincomalee Police Station", "code": "TRI-001", "districtCode": "TRI", "address": "Trincomalee", "contactNo": "0262000001" },
+
+  { "name": "Kurunegala Police Station", "code": "KUR-001", "districtCode": "KUR", "address": "Kurunegala", "contactNo": "0372000001" },
+  { "name": "Anuradhapura Police Station", "code": "ANU-001", "districtCode": "ANU", "address": "Anuradhapura", "contactNo": "0252000001" },
+  { "name": "Badulla Police Station", "code": "BAD-001", "districtCode": "BAD", "address": "Badulla", "contactNo": "0552000001" },
+  { "name": "Ratnapura Police Station", "code": "RTN-001", "districtCode": "RTN", "address": "Ratnapura", "contactNo": "0452000001" }
+]

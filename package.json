@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
-    "seed:admin": "node src/seeds/seedAdmin.js"
+    "seed:admin": "node src/seeds/seedAdmin.js",
+    "seed:master": "node src/seeds/seedMasterData.js",
+    "seed:ops": "node src/seeds/seedOperationalData.js",
+    "seed:logs": "node src/seeds/seedLocationLogs.js",
+    "seed:users": "node src/seeds/seedUsers.js"
   },
   "keywords": [],
   "author": "",

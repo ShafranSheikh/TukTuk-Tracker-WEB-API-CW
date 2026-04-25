@@ -1,0 +1,35 @@
+[
+  { "name": "Colombo", "code": "CMB", "provinceCode": "WEST" },
+  { "name": "Gampaha", "code": "GPH", "provinceCode": "WEST" },
+  { "name": "Kalutara", "code": "KLT", "provinceCode": "WEST" },
+
+  { "name": "Kandy", "code": "KDY", "provinceCode": "CENT" },
+  { "name": "Matale", "code": "MTL", "provinceCode": "CENT" },
+  { "name": "Nuwara Eliya", "code": "NWE", "provinceCode": "CENT" },
+
+  { "name": "Galle", "code": "GLE", "provinceCode": "SOUTH" },
+  { "name": "Matara", "code": "MTR", "provinceCode": "SOUTH" },
+  { "name": "Hambantota", "code": "HBT", "provinceCode": "SOUTH" },
+
+  { "name": "Jaffna", "code": "JFN", "provinceCode": "NORTH" },
+  { "name": "Kilinochchi", "code": "KLN", "provinceCode": "NORTH" },
+  { "name": "Mannar", "code": "MNR", "provinceCode": "NORTH" },
+  { "name": "Vavuniya", "code": "VAV", "provinceCode": "NORTH" },
+  { "name": "Mullaitivu", "code": "MLT", "provinceCode": "NORTH" },
+
+  { "name": "Batticaloa", "code": "BTC", "provinceCode": "EAST" },
+  { "name": "Ampara", "code": "AMP", "provinceCode": "EAST" },
+  { "name": "Trincomalee", "code": "TRI", "provinceCode": "EAST" },
+
+  { "name": "Kurunegala", "code": "KUR", "provinceCode": "NWEST" },
+  { "name": "Puttalam", "code": "PUT", "provinceCode": "NWEST" },
+
+  { "name": "Anuradhapura", "code": "ANU", "provinceCode": "NCENT" },
+  { "name": "Polonnaruwa", "code": "POL", "provinceCode": "NCENT" },
+
+  { "name": "Badulla", "code": "BAD", "provinceCode": "UVA" },
+  { "name": "Monaragala", "code": "MON", "provinceCode": "UVA" },
+
+  { "name": "Ratnapura", "code": "RTN", "provinceCode": "SAB" },
+  { "name": "Kegalle", "code": "KEG", "provinceCode": "SAB" }
+]

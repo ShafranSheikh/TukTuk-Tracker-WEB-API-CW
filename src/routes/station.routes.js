@@ -11,6 +11,39 @@ import roleMiddleware from "../middleware/role.middleware.js";
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * /api/v1/stations:
+ *   post:
+ *     summary: Create a police station
+ *     tags: [Station]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - name
+ *               - code
+ *               - provinceId
+ *               - districtId
+ *             properties:
+ *               name:
+ *                 type: string
+ *               code:
+ *                 type: string
+ *               provinceId:
+ *                 type: string
+ *               districtId:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: Station created
+ */
+
 // Create station - HQ Admin only
 router.post(
   "/",
@@ -18,6 +51,19 @@ router.post(
   roleMiddleware("HQ_ADMIN"),
   createStation
 );
+
+/**
+ * @swagger
+ * /api/v1/stations:
+ *   get:
+ *     summary: Get all stations
+ *     tags: [Station]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: List of stations
+ */
 
 // Get all stations - any logged-in user
 router.get("/", authMiddleware, getAllStations);

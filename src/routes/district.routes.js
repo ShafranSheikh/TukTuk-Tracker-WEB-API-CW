@@ -11,6 +11,37 @@ import roleMiddleware from "../middleware/role.middleware.js";
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * /api/v1/districts:
+ *   post:
+ *     summary: Create a district
+ *     tags: [District]
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - name
+ *               - code
+ *               - provinceId
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: Colombo
+ *               code:
+ *                 type: string
+ *                 example: CMB
+ *               provinceId:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: District created
+ */
 // Create district - HQ Admin only
 router.post(
   "/",
@@ -18,6 +49,24 @@ router.post(
   roleMiddleware("HQ_ADMIN"),
   createDistrict
 );
+
+/**
+ * @swagger
+ * /api/v1/districts:
+ *   get:
+ *     summary: Get all districts
+ *     tags: [District]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: query
+ *         name: provinceId
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: List of districts
+ */
 
 // Get all districts - any logged-in user
 router.get("/", authMiddleware, getAllDistricts);

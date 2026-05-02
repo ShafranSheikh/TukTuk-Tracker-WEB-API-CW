@@ -68,9 +68,58 @@ router.post(
 // Get all stations - any logged-in user
 router.get("/", authMiddleware, getAllStations);
 
+/**
+ * @swagger
+ * /api/v1/stations/{id}:
+ *   get:
+ *     summary: Get a station by ID
+ *     tags: [Station]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Station details
+ */
 // Get single station
 router.get("/:id", authMiddleware, getStationById);
 
+/**
+ * @swagger
+ * /api/v1/stations/{id}:
+ *   patch:
+ *     summary: Update a station
+ *     tags: [Station]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: Central Police Station
+ *               code:
+ *                 type: string
+ *                 example: CENT
+ *     responses:
+ *       200:
+ *         description: Station updated
+ */
 // Update station - HQ Admin only
 router.patch(
   "/:id",

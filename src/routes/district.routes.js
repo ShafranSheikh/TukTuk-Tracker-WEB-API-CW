@@ -71,9 +71,60 @@ router.post(
 // Get all districts - any logged-in user
 router.get("/", authMiddleware, getAllDistricts);
 
+/**
+ * @swagger
+ * /api/v1/districts/{id}:
+ *   get:
+ *     summary: Get a district by ID
+ *     tags: [District]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: District details
+ */ 
 // Get single district
 router.get("/:id", authMiddleware, getDistrictById);
 
+/**
+ * @swagger
+ * /api/v1/districts/{id}:
+ *   patch:
+ *     summary: Update a district
+ *     tags: [District]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: Colombo Updated
+ *               code:
+ *                 type: string
+ *                 example: CMBU
+ *               provinceId:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: District updated
+ */
 // Update district - HQ Admin only
 router.patch(
   "/:id",

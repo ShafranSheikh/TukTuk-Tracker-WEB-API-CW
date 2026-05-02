@@ -70,9 +70,63 @@ router.post(
 // Get all drivers - any logged-in user
 router.get("/", authMiddleware, getAllDrivers);
 
+
+/**
+ * @swagger
+ * /api/v1/drivers/{id}:
+ *   get:
+ *     summary: Get a driver by ID
+ *     tags: [Driver]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Driver found
+ *       404:
+ *         description: Driver not found
+ */
 // Get single driver
 router.get("/:id", authMiddleware, getDriverById);
 
+/**
+ * @swagger
+ * /api/v1/drivers/{id}:
+ *   patch:
+ *     summary: Update a driver
+ *     tags: [Driver]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               fullName:
+ *                 type: string
+ *               nic:
+ *                 type: string
+ *               licenseNo:
+ *                 type: string
+ *               status:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Driver updated
+ */ 
 // Update driver - HQ Admin only
 router.patch(
   "/:id",

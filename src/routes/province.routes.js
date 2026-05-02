@@ -63,9 +63,58 @@ router.post(
 // Get all provinces (any logged-in user)
 router.get("/", authMiddleware, getAllProvinces);
 
+
+/** * @swagger
+ * /api/v1/provinces/{id}:
+ *   get:
+ *     summary: Get a province by ID
+ *     tags: [Province]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Province details
+ */
 // Get single province
 router.get("/:id", authMiddleware, getProvinceById);
 
+/**
+ * @swagger
+ * /api/v1/provinces/{id}:
+ *   patch:
+ *     summary: Update a province
+ *     tags: [Province]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 example: Western
+ *               code:
+ *                 type: string
+ *                 example: WEST
+ *     responses:
+ *       200:
+ *         description: Province updated
+ */
 // Update province (HQ Admin only)
 router.patch(
   "/:id",
